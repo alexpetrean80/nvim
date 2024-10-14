@@ -3,3 +3,5 @@
 -- Add any additional options here
 --
 vim.opt.swapfile = false
+vim.g.lazy_picker = "telescope"
+vim.g.lazyvim_python_lsp = "ruff"
