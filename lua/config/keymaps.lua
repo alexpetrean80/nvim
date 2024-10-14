@@ -3,3 +3,5 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("n", "<leader>\\", "<cmd>vsplit<CR>", { desc = "Split Window Right", remap = true })
+
+vim.keymap.del("n", "<leader>|")

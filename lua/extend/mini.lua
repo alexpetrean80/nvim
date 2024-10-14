@@ -14,6 +14,8 @@ return {
         end,
         desc = "Explorer",
       },
+      { "<leader>fM", false },
+      { "<leader>fm", false },
     },
   },
 }
