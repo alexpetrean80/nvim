@@ -1,8 +1,8 @@
-return  {
-    "nvim-lualine/lualine.nvim",
-    event = "VeryLazy",
-    config = function()
-local lualine = require("lualine")
+return {
+  "nvim-lualine/lualine.nvim",
+  event = "VeryLazy",
+  config = function()
+    local lualine = require("lualine")
     local get_lsp = function()
       local msg = "No Active Lsp"
       local buf_ft = vim.api.nvim_buf_get_option(0, "filetype")
@@ -186,7 +186,7 @@ local lualine = require("lualine")
 
     -- Add components to right sections
     ins_right({
-      "o:encoding",    -- option component same as &encoding in viml
+      "o:encoding", -- option component same as &encoding in viml
       fmt = string.upper, -- I'm not sure why it's upper case either ;)
       cond = conditions.hide_in_width,
       color = { fg = colors.yellow, gui = "bold" },
@@ -201,6 +201,5 @@ local lualine = require("lualine")
 
     -- Now don't forget to initialize lualine
     lualine.setup(config)
-    end,
-  }
-
+  end,
+}

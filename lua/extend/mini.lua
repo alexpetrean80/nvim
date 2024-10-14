@@ -9,11 +9,11 @@ return {
     keys = {
       {
         "<leader>e",
-        function() 
+        function()
           require("mini.files").open(vim.uv.cwd(), true)
         end,
         desc = "Explorer",
-      }
+      },
     },
-  }
+  },
 }
