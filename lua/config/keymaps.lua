@@ -4,3 +4,4 @@
 --
 
 vim.keymaps.del({"n", "i", "v", "x"}, ";")
+vim.keymaps.set("n", "<leader>\\", "<cmd>vsplit<CR>")
