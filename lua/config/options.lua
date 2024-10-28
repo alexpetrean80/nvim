@@ -9,3 +9,5 @@ vim.opt.wrap = true
 
 vim.g.lazy_picker = "telescope"
 vim.g.lazyvim_python_lsp = "ruff"
+
+vim.opt.updatetime = 200
